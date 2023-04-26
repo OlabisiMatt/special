@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     $author = $_POST['author'];
     $title = $_POST['title'];
     $content = $_POST['content'];
-    
+
     $sql = "INSERT INTO post (author, title, content)
     VALUES ('$author', '$title', '$content')";
 
@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+
     <!--Navigation Bar here-->
     <div class="nav-container">
         <div class="wrapper">
@@ -119,10 +119,10 @@ if(isset($_POST['submit'])){
     <section class="community">
         <div class="content">
             <?php
-            
+
                 $sql = "SELECT * FROM post";
                 $result = $conn->query($sql);
-                
+
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
@@ -137,8 +137,8 @@ if(isset($_POST['submit'])){
             <div class="community-box">
                 <h3 class="">Author: Teebooks</h3>
                 <h3 class="">Topic: Spark it</h3>
-                <p>Message: Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Magnam ipsum deserunt quas cum quae 
+                <p>Message: Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Magnam ipsum deserunt quas cum quae
                     numquam optio? Nisi a est aspernatur sequi similique
                      voluptas nemo et voluptate neque officia, accusamus voluptatem</p>
                 <div class="load-more"><a href="#" class="btn">more</a></div>
@@ -152,7 +152,7 @@ if(isset($_POST['submit'])){
             </div>
 
         </div>
-        
+
 
     </section>
     <!--Community Ends-->

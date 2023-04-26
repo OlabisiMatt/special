@@ -25,7 +25,7 @@ if (isset($_COOKIE['user_id'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+
     <!--Navigation Bar here-->
     <div class="nav-container">
         <div class="wrapper">
@@ -43,7 +43,7 @@ if (isset($_COOKIE['user_id'])) {
                     </li>
 
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="../home.php">Home</a>
                     </li>
 
                     <li>
@@ -111,7 +111,7 @@ if (isset($_COOKIE['user_id'])) {
                 <div class="more"><a href="#" class="btn">view details</a></div>
             </div>
         </div>
-        
+
     </section>
     <!-- Property leasing end-->
 
